@@ -18,7 +18,7 @@ namespace BinaryWriterDemo
         }
         public void WriteData()
         {
-            fs = new FileStream(@"/Users/swapnilnawale/Desktop/stud.dat", FileMode.Open, FileAccess.Write);
+            fs = new FileStream(@"C:/Users/Admin/Desktop/stud.txt", FileMode.Append, FileAccess.Write);
             BinaryWriter bw = new BinaryWriter(fs);
             bw.Write(studentName);
             for (int i = 0; i < 3; i++)
@@ -33,7 +33,7 @@ namespace BinaryWriterDemo
         }
         public void ReadData()
         {
-            fs = new FileStream(@"/Users/swapnilnawale/Desktop/stud.dat", FileMode.Open, FileAccess.Read);
+            fs = new FileStream(@"C:/Users/Admin/Desktop/stud.txt", FileMode.Open, FileAccess.Read);
             BinaryReader br = new BinaryReader(fs);
             for (int j = 0; j < numOfStudents; j++)
             {
